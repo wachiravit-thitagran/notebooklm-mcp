@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 import { createHash, timingSafeEqual } from 'crypto';
-import http, { IncomingHttpHeaders, IncomingMessage, ServerResponse } from 'http';
+import http from 'http';
+import type { IncomingHttpHeaders, IncomingMessage, ServerResponse } from 'http';
 import https from 'https';
 
 const apiKey = process.env.MCP_API_KEY;
